@@ -1,0 +1,14 @@
+body {
+  background-color: #5E3122;
+  font: 1.2em / 1.5 sans-serif;
+  padding: 0;
+  margin: 1em;
+
+}
+
+.container-body-page {
+  padding: 40px;
+  background-color: bisque;
+  margin: 20px;
+
+}
