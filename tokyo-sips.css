@@ -10,5 +10,45 @@ body {
   padding: 40px;
   background-color: bisque;
   margin: 20px;
+}
 
+.aura-nav {
+  position: relative;
+  width: 100%;
+  padding: 2px;
+  /*burder thickness*/
+  border-radius: 12px;
+  background: #333;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/*for the glowing light that will be control by Javascript*/
+.aura-nav::before {
+  content: '';
+  position: absolute;
+  /*Position using CSS variables updated by JS */
+  top: var(--y, 0px);
+  left: var(--x, 0px);
+  transform: translate(-50% -50%);
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(circle, #ff007f, transparent 70%);
+  opacity: 0px;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+/* Reveal the glow when hovering */
+.aura-nav:hover::before {
+  opacity: 1;
+}
+
+.card-body-nav {
+  background: bisque;
+  border-radius: 10px;
+  padding: 20px;
+  color: white;
+  position: relative;
+  z-index: 1;
 }
