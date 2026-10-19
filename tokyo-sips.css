@@ -59,4 +59,12 @@ body {
   z-index: 1;
 }
 
-.pictures {}
+/*.pictures {
+  justify-content: center;
+  display: flex;
+  gap: 9px;
+}
+
+.title-picture {
+  text-align: left;
+}*/
