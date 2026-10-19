@@ -59,12 +59,18 @@ body {
   z-index: 1;
 }
 
-/*.pictures {
+
+.pictures {
   justify-content: center;
   display: flex;
-  gap: 9px;
+  gap: 25px;
+  list-style: none;
 }
 
 .title-picture {
   text-align: left;
-}*/
+  color: #5E3122;
+  font-family: "Henny Penny", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
